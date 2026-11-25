@@ -1,0 +1,1075 @@
+{
+  "schema_version": 1,
+  "default_id": "rose_mist",
+  "editor": "Raphael He",
+  "updated": "2026-11-05",
+  "palettes": [
+    {
+      "id": "rose_mist",
+      "name": "雾海玫瑰",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "default",
+      "main": [
+        "#C289A0",
+        "#527F94",
+        "#A5B59A"
+      ],
+      "support": [
+        "#E2B9C7"
+      ],
+      "source_colors": [
+        "#527F94",
+        "#9DBCC7",
+        "#D7E5E6",
+        "#C289A0",
+        "#E2B9C7",
+        "#A5B59A"
+      ],
+      "rgb": {
+        "#527F94": [
+          82,
+          127,
+          148
+        ],
+        "#9DBCC7": [
+          157,
+          188,
+          199
+        ],
+        "#D7E5E6": [
+          215,
+          229,
+          230
+        ],
+        "#C289A0": [
+          194,
+          137,
+          160
+        ],
+        "#E2B9C7": [
+          226,
+          185,
+          199
+        ],
+        "#A5B59A": [
+          165,
+          181,
+          154
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Distribution/response groups; distinguish two blues by shape or use only one. Density ramps require redesign, not concatenating all six colours.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "1",
+        "label": "雾海玫瑰",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "sea_coral",
+      "name": "海盐珊瑚",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#F4A7AE",
+        "#5878A6",
+        "#A6D0C6"
+      ],
+      "support": [
+        "#F7FAFC",
+        "#FBD9C9"
+      ],
+      "source_colors": [
+        "#F7FAFC",
+        "#A7C7E7",
+        "#CFEAF6",
+        "#F4A7AE",
+        "#FBD9C9",
+        "#5878A6",
+        "#A6D0C6",
+        "#DADDE3"
+      ],
+      "rgb": {
+        "#F7FAFC": [
+          247,
+          250,
+          252
+        ],
+        "#A7C7E7": [
+          167,
+          199,
+          231
+        ],
+        "#CFEAF6": [
+          207,
+          234,
+          246
+        ],
+        "#F4A7AE": [
+          244,
+          167,
+          174
+        ],
+        "#FBD9C9": [
+          251,
+          217,
+          201
+        ],
+        "#5878A6": [
+          88,
+          120,
+          166
+        ],
+        "#A6D0C6": [
+          166,
+          208,
+          198
+        ],
+        "#DADDE3": [
+          218,
+          221,
+          227
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "PCA/response/spectral groups; pale peach is fill, not a thin trace on white. Volcano thresholds/ellipses must come from analysis.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "2",
+        "label": "海盐珊瑚",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "lavender_apricot",
+      "name": "浅藤杏露",
+      "version": 1,
+      "aliases": [
+        "浅藤青露"
+      ],
+      "kind": "categorical",
+      "priority": "recommended",
+      "main": [
+        "#E5C5AE",
+        "#88B5AA",
+        "#9C8CB4"
+      ],
+      "support": [
+        "#E8E1EE"
+      ],
+      "source_colors": [
+        "#9C8CB4",
+        "#C6B8D6",
+        "#E8E1EE",
+        "#88B5AA",
+        "#BCD6CB",
+        "#E5C5AE"
+      ],
+      "rgb": {
+        "#9C8CB4": [
+          156,
+          140,
+          180
+        ],
+        "#C6B8D6": [
+          198,
+          184,
+          214
+        ],
+        "#E8E1EE": [
+          232,
+          225,
+          238
+        ],
+        "#88B5AA": [
+          136,
+          181,
+          170
+        ],
+        "#BCD6CB": [
+          188,
+          214,
+          203
+        ],
+        "#E5C5AE": [
+          229,
+          197,
+          174
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Violet/sage/peach categorical contrasts; the three lavender tones are not automatically independent categories.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "3",
+        "label": "浅藤青露",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "jade_wisteria",
+      "name": "青岚藤影",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#4F8B84",
+        "#9A8DBB",
+        "#D7BC8A"
+      ],
+      "support": [
+        "#D5E6DF",
+        "#CABFDC"
+      ],
+      "source_colors": [
+        "#4F8B84",
+        "#91BDB3",
+        "#D5E6DF",
+        "#9A8DBB",
+        "#CABFDC",
+        "#D7BC8A"
+      ],
+      "rgb": {
+        "#4F8B84": [
+          79,
+          139,
+          132
+        ],
+        "#91BDB3": [
+          145,
+          189,
+          179
+        ],
+        "#D5E6DF": [
+          213,
+          230,
+          223
+        ],
+        "#9A8DBB": [
+          154,
+          141,
+          187
+        ],
+        "#CABFDC": [
+          202,
+          191,
+          220
+        ],
+        "#D7BC8A": [
+          215,
+          188,
+          138
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Teal/violet/sand for distributions or response series. Two-ended or multi-hue contour colour is not automatically a valid ordered scale.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "4",
+        "label": "青岚藤影",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "apricot_jade",
+      "name": "杏雨青荷",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "recommended",
+      "main": [
+        "#E7AF98",
+        "#82B6AB",
+        "#ACBFD0"
+      ],
+      "support": [
+        "#F3E6CE"
+      ],
+      "source_colors": [
+        "#E7AF98",
+        "#F2D2B7",
+        "#F3E6CE",
+        "#82B6AB",
+        "#B2D0BF",
+        "#ACBFD0"
+      ],
+      "rgb": {
+        "#E7AF98": [
+          231,
+          175,
+          152
+        ],
+        "#F2D2B7": [
+          242,
+          210,
+          183
+        ],
+        "#F3E6CE": [
+          243,
+          230,
+          206
+        ],
+        "#82B6AB": [
+          130,
+          182,
+          171
+        ],
+        "#B2D0BF": [
+          178,
+          208,
+          191
+        ],
+        "#ACBFD0": [
+          172,
+          191,
+          208
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Preferred starting family. Apricot/jade/grey-blue for distinct groups; peach/cream for supporting fills. Similar warm tints are poor small-mark category separators.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "5",
+        "label": "杏雨青荷",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "fir_purple",
+      "name": "冷杉烟紫",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#35594F",
+        "#6A627F",
+        "#A5BBAA"
+      ],
+      "support": [
+        "#E0E9DF",
+        "#D4CDDF"
+      ],
+      "source_colors": [
+        "#35594F",
+        "#668578",
+        "#A5BBAA",
+        "#E0E9DF",
+        "#6A627F",
+        "#9D93AD",
+        "#D4CDDF",
+        "#F7F6F9"
+      ],
+      "rgb": {
+        "#35594F": [
+          53,
+          89,
+          79
+        ],
+        "#668578": [
+          102,
+          133,
+          120
+        ],
+        "#A5BBAA": [
+          165,
+          187,
+          170
+        ],
+        "#E0E9DF": [
+          224,
+          233,
+          223
+        ],
+        "#6A627F": [
+          106,
+          98,
+          127
+        ],
+        "#9D93AD": [
+          157,
+          147,
+          173
+        ],
+        "#D4CDDF": [
+          212,
+          205,
+          223
+        ],
+        "#F7F6F9": [
+          247,
+          246,
+          249
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Useful restrained dark marks or cool alternative; not the warm default. Green/purple deviations require a labelled centre and checked lightness.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "6",
+        "label": "冷杉烟紫",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "watercolor_blossom",
+      "name": "水色花影",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#9BCFC1",
+        "#B9A0CF",
+        "#E4A9CD"
+      ],
+      "support": [
+        "#F1C5D4"
+      ],
+      "source_colors": [
+        "#9BCFC1",
+        "#A4C4D1",
+        "#B9A0CF",
+        "#E4A9CD",
+        "#F1C5D4",
+        "#C2D6B4"
+      ],
+      "rgb": {
+        "#9BCFC1": [
+          155,
+          207,
+          193
+        ],
+        "#A4C4D1": [
+          164,
+          196,
+          209
+        ],
+        "#B9A0CF": [
+          185,
+          160,
+          207
+        ],
+        "#E4A9CD": [
+          228,
+          169,
+          205
+        ],
+        "#F1C5D4": [
+          241,
+          197,
+          212
+        ],
+        "#C2D6B4": [
+          194,
+          214,
+          180
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Soft categorical areas with differentiated marks; avoid assigning all six nearby pastels to thin overlapping curves. Pink is an optional accent, not compulsory.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "7/8",
+        "label": "水色花影",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "mist_celadon",
+      "name": "雾蓝青瓷",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#4F6D8A",
+        "#6B9B8F",
+        "#A7C4B0"
+      ],
+      "support": [
+        "#DCEDE6",
+        "#F5F7FA"
+      ],
+      "source_colors": [
+        "#4F6D8A",
+        "#7FA6C9",
+        "#A7C4B0",
+        "#DCEDE6",
+        "#C4CBD6",
+        "#8EA1B7",
+        "#6B9B8F",
+        "#F5F7FA"
+      ],
+      "rgb": {
+        "#4F6D8A": [
+          79,
+          109,
+          138
+        ],
+        "#7FA6C9": [
+          127,
+          166,
+          201
+        ],
+        "#A7C4B0": [
+          167,
+          196,
+          176
+        ],
+        "#DCEDE6": [
+          220,
+          237,
+          230
+        ],
+        "#C4CBD6": [
+          196,
+          203,
+          214
+        ],
+        "#8EA1B7": [
+          142,
+          161,
+          183
+        ],
+        "#6B9B8F": [
+          107,
+          155,
+          143
+        ],
+        "#F5F7FA": [
+          245,
+          247,
+          250
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Cool alternative for dense traces; it is not evidence that colours belong to a specific discipline. Multiple blue-greys need redundant encodings.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "9",
+        "label": "雾蓝青瓷",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "burgundy_slate",
+      "name": "勃艮第灰",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#713E50",
+        "#526879",
+        "#D5B78C"
+      ],
+      "support": [
+        "#E9D5DB",
+        "#C4CED6"
+      ],
+      "source_colors": [
+        "#713E50",
+        "#A56778",
+        "#C997A3",
+        "#E9D5DB",
+        "#526879",
+        "#8EA4B3",
+        "#C4CED6",
+        "#D5B78C"
+      ],
+      "rgb": {
+        "#713E50": [
+          113,
+          62,
+          80
+        ],
+        "#A56778": [
+          165,
+          103,
+          120
+        ],
+        "#C997A3": [
+          201,
+          151,
+          163
+        ],
+        "#E9D5DB": [
+          233,
+          213,
+          219
+        ],
+        "#526879": [
+          82,
+          104,
+          121
+        ],
+        "#8EA4B3": [
+          142,
+          164,
+          179
+        ],
+        "#C4CED6": [
+          196,
+          206,
+          214
+        ],
+        "#D5B78C": [
+          213,
+          183,
+          140
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Useful stronger line colours when pale marks fail; reduce dark burgundy area to preserve lightness. Shiny spheres and large title bands are not a scientific style requirement.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "10",
+        "label": "勃艮第灰",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "glacier_teal",
+      "name": "冰川蓝绿",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#315C6B",
+        "#8CB9BB",
+        "#C6B992"
+      ],
+      "support": [
+        "#C9DEDA",
+        "#E5DDC8"
+      ],
+      "source_colors": [
+        "#315C6B",
+        "#538A95",
+        "#8CB9BB",
+        "#C9DEDA",
+        "#607D8B",
+        "#A5BCC7",
+        "#C6B992",
+        "#E5DDC8"
+      ],
+      "rgb": {
+        "#315C6B": [
+          49,
+          92,
+          107
+        ],
+        "#538A95": [
+          83,
+          138,
+          149
+        ],
+        "#8CB9BB": [
+          140,
+          185,
+          187
+        ],
+        "#C9DEDA": [
+          201,
+          222,
+          218
+        ],
+        "#607D8B": [
+          96,
+          125,
+          139
+        ],
+        "#A5BCC7": [
+          165,
+          188,
+          199
+        ],
+        "#C6B992": [
+          198,
+          185,
+          146
+        ],
+        "#E5DDC8": [
+          229,
+          221,
+          200
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Cool alternative with a small sand accent; same-hue levels can suggest order, so categorical curves also need shape/line coding.",
+      "limits": "Supporting tints are not extra categories. Review actual marks in colour, CVD and grayscale. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "11",
+        "label": "冰川蓝绿",
+        "value_basis": "printed HEX labels; selected subset and role assignment by this skill",
+        "reviewed": "2026-11-04"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "rose_apricot_slate",
+      "name": "玫瑰杏灰",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#C289A0",
+        "#E7AF98",
+        "#526879"
+      ],
+      "support": [
+        "#E9D5DB",
+        "#F3E6CE"
+      ],
+      "source_colors": [
+        "#C289A0",
+        "#E7AF98",
+        "#526879",
+        "#E9D5DB",
+        "#F3E6CE"
+      ],
+      "rgb": {
+        "#C289A0": [
+          194,
+          137,
+          160
+        ],
+        "#E7AF98": [
+          231,
+          175,
+          152
+        ],
+        "#526879": [
+          82,
+          104,
+          121
+        ],
+        "#E9D5DB": [
+          233,
+          213,
+          219
+        ],
+        "#F3E6CE": [
+          243,
+          230,
+          206
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Rose/apricot warmth with a slate anchor for a comparator; pale fills need dark outlines.",
+      "limits": "A newly arranged combination, not an original source-sheet palette. Supporting fills are not additional categories. Similar lightness can weaken grayscale separation; use shapes/line types and inspect actual marks. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "1,5,10",
+        "label": "User-supplied sheets 1,5,10; newly arranged library candidate",
+        "value_basis": "Exact printed HEX values recombined by the assistant for Raphael He; combination and roles are new, not recovered from a source figure.",
+        "reviewed": "2026-11-05"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "rose_jade_sand",
+      "name": "玫瑰青砂",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#C289A0",
+        "#4F8B84",
+        "#D5B78C"
+      ],
+      "support": [
+        "#E2B9C7",
+        "#D5E6DF"
+      ],
+      "source_colors": [
+        "#C289A0",
+        "#4F8B84",
+        "#D5B78C",
+        "#E2B9C7",
+        "#D5E6DF"
+      ],
+      "rgb": {
+        "#C289A0": [
+          194,
+          137,
+          160
+        ],
+        "#4F8B84": [
+          79,
+          139,
+          132
+        ],
+        "#D5B78C": [
+          213,
+          183,
+          140
+        ],
+        "#E2B9C7": [
+          226,
+          185,
+          199
+        ],
+        "#D5E6DF": [
+          213,
+          230,
+          223
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Dusty rose and jade distinguish two main groups; sand is an optional third group with shape redundancy.",
+      "limits": "A newly arranged combination, not an original source-sheet palette. Supporting fills are not additional categories. Similar lightness can weaken grayscale separation; use shapes/line types and inspect actual marks. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "1,4,10",
+        "label": "User-supplied sheets 1,4,10; newly arranged library candidate",
+        "value_basis": "Exact printed HEX values recombined by the assistant for Raphael He; combination and roles are new, not recovered from a source figure.",
+        "reviewed": "2026-11-05"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    },
+    {
+      "id": "lavender_apricot_mist",
+      "name": "浅藤杏雾",
+      "version": 1,
+      "aliases": [],
+      "kind": "categorical",
+      "priority": "alternative",
+      "main": [
+        "#9C8CB4",
+        "#E7AF98",
+        "#527F94"
+      ],
+      "support": [
+        "#E8E1EE",
+        "#F2D2B7"
+      ],
+      "source_colors": [
+        "#9C8CB4",
+        "#E7AF98",
+        "#527F94",
+        "#E8E1EE",
+        "#F2D2B7"
+      ],
+      "rgb": {
+        "#9C8CB4": [
+          156,
+          140,
+          180
+        ],
+        "#E7AF98": [
+          231,
+          175,
+          152
+        ],
+        "#527F94": [
+          82,
+          127,
+          148
+        ],
+        "#E8E1EE": [
+          232,
+          225,
+          238
+        ],
+        "#F2D2B7": [
+          242,
+          210,
+          183
+        ]
+      },
+      "recommended_categories": [
+        2,
+        3
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "status": "candidate",
+      "uses": "Lavender/apricot fills with a muted blue anchor for distribution and response comparisons.",
+      "limits": "A newly arranged combination, not an original source-sheet palette. Supporting fills are not additional categories. Similar lightness can weaken grayscale separation; use shapes/line types and inspect actual marks. Not a continuous scale.",
+      "source": {
+        "record": "references/reference-observations-2026-11-04-soft-palettes.md",
+        "sheet": "1,3,5",
+        "label": "User-supplied sheets 1,3,5; newly arranged library candidate",
+        "value_basis": "Exact printed HEX values recombined by the assistant for Raphael He; combination and roles are new, not recovered from a source figure.",
+        "reviewed": "2026-11-05"
+      },
+      "validation": {
+        "registry": "syntax and role checks only",
+        "actual_figure": "not run",
+        "cvd": "not run",
+        "grayscale": "not run"
+      }
+    }
+  ]
+}

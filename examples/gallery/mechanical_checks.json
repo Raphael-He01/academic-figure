@@ -1,0 +1,149 @@
+{
+  "scope": "Container and physical dimensions for PDF/SVG/PNG plus PDF font embedding. Scientific and final-size visual acceptance pending.",
+  "checks": [
+    {
+      "file": "statistical_panels.pdf",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "dd912885b16e867bd5c1f05ebe2d1bfc9561a472c179458b00b7e4df747ec03f",
+      "expected_mm": [
+        183,
+        148
+      ]
+    },
+    {
+      "file": "statistical_panels.pdf",
+      "tool": "fonts",
+      "exit": 0,
+      "file_sha256": "dd912885b16e867bd5c1f05ebe2d1bfc9561a472c179458b00b7e4df747ec03f"
+    },
+    {
+      "file": "statistical_panels.svg",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "05234b0dcbb994bc1a74995facc5fa8048c64a404c0e9175b6520bf7ffb2d5f5",
+      "expected_mm": [
+        183,
+        148
+      ]
+    },
+    {
+      "file": "statistical_panels.png",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "371c8e4f9b0e9d24ed9f9ca0086571ee1087e3ae8bbb09bf4ef3da79b23240c7",
+      "expected_mm": [
+        183,
+        148
+      ]
+    },
+    {
+      "file": "global_sites.pdf",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "a0c253c3448f2e4d344ad6d95a384216664c838787e07bacdf110fcb7eb54ee4",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "global_sites.pdf",
+      "tool": "fonts",
+      "exit": 0,
+      "file_sha256": "a0c253c3448f2e4d344ad6d95a384216664c838787e07bacdf110fcb7eb54ee4"
+    },
+    {
+      "file": "global_sites.svg",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "3b5c2c428db4d318dbe59821e620b347bbe15cf22e2d0b0b13afb33c511ef708",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "global_sites.png",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "ad7f0018fbd906d8e617d11c83045c8f98db041a5b6804a0cb67657bebbc7d59",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "spatial_residuals.pdf",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "cba4bd263059582990b740d76b1f29621cfacdc4319fe1c1bfb282204d3345d3",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "spatial_residuals.pdf",
+      "tool": "fonts",
+      "exit": 0,
+      "file_sha256": "cba4bd263059582990b740d76b1f29621cfacdc4319fe1c1bfb282204d3345d3"
+    },
+    {
+      "file": "spatial_residuals.svg",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "fa7078d4a52e7affb419271d53a9f0a7b07a4aa87fe8dd1cb45719dcd3f02957",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "spatial_residuals.png",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "0101f4276e337c62d5898cf2288275a98c7ae9c42107b86b53e3bc8114d3fa17",
+      "expected_mm": [
+        160,
+        105
+      ]
+    },
+    {
+      "file": "model_diagnostics.pdf",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "df92efbe2de33ee8be0b5e41f5d95fcd1450e0fbe1498713762fed865034dcaf",
+      "expected_mm": [
+        183,
+        100
+      ]
+    },
+    {
+      "file": "model_diagnostics.pdf",
+      "tool": "fonts",
+      "exit": 0,
+      "file_sha256": "df92efbe2de33ee8be0b5e41f5d95fcd1450e0fbe1498713762fed865034dcaf"
+    },
+    {
+      "file": "model_diagnostics.svg",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "9b09624642b51fac33a9ed77b33fb42375d22957ce2156892dd41597a37b56dd",
+      "expected_mm": [
+        183,
+        100
+      ]
+    },
+    {
+      "file": "model_diagnostics.png",
+      "tool": "container",
+      "exit": 0,
+      "file_sha256": "14fcd1553e85970dfdbadef3906ebb3cd907c7f6581e9f601135abf2feb7c093",
+      "expected_mm": [
+        183,
+        100
+      ]
+    }
+  ]
+}

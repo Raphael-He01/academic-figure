@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ROUTE_COUNT}} 种科研图型 · Academic Figure</title><style>
+*{box-sizing:border-box}body{margin:0;color:#282631;background:#fbfaf8;font:16px/1.65 system-ui,"PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:1280px;margin:auto;padding:26px clamp(17px,4vw,60px) 50px}a{color:#75455d;text-underline-offset:3px}
+h1{line-height:1.2;font-size:clamp(2rem,4vw,3.2rem);margin:.45em 0 .2em}p{margin:.5em 0 1.1em}input{font:inherit;background:#fff;border:1px solid #8a7480;border-radius:6px;padding:.5em .7em;width:min(100%,34em)}
+table{width:100%;border-collapse:collapse;background:#fff}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #ded6db;padding:11px}
+thead{background:#f2e5ec}tbody th{color:#75455d}td:nth-child(2){width:24%}td:nth-child(3){width:27%}
+.clear{padding:.4em .7em;font:inherit;background:#f2e5ec;color:#402633;border:1px solid #a18694;border-radius:5px}
+[hidden]{display:none!important}code{font-size:.95em}a:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid #75455d}
+@media(max-width:760px){table,tbody,tr,th,td{display:block}thead{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}tr{border:1px solid #ddd4da;margin:.7em 0;padding:10px}td,th{border:none;padding:3px}td:nth-child(2),td:nth-child(3){width:100%}td:nth-child(2){font-weight:650}}
+</style></head><body><main><a href="START.html">返回试用首页</a><h1>按研究问题选图</h1>
+<p>{{ROUTE_COUNT}} 种图型按研究问题列出。先看候选画法，再核对数据需要保留哪些信息。<a href="academic-figure/references/figure-family-index.md">阅读完整方法索引</a></p>
+<label for="q">搜索编号、图型或关键词</label><br><input id="q" type="search" placeholder="例如 V06、概率、空间网络">
+<button type="button" class="clear" id="clear">清除</button><p id="matches" aria-live="polite">显示 {{ROUTE_COUNT}} / {{ROUTE_COUNT}} 条</p>
+<table><thead><tr><th scope="col">编号</th><th scope="col">研究问题</th><th scope="col">候选画法</th><th scope="col">数据条件与取舍</th></tr></thead><tbody>{{ROUTE_ROWS}}</tbody></table><p><a href="START.html#models">查看两套可重画的模型输出示例</a></p></main>
+<script>
+const q=document.getElementById('q'), rows=Array.from(document.querySelectorAll('tbody tr'));
+function filter(){const terms=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);let count=0;
+for(const row of rows){const text=row.textContent.toLowerCase();row.hidden=!terms.every(t=>text.includes(t));if(!row.hidden)count++;}
+document.getElementById('matches').textContent='显示 '+count+' / '+rows.length+' 条';}
+q.addEventListener('input',filter);document.getElementById('clear').addEventListener('click',()=>{q.value='';filter();q.focus()});
+</script></body></html>

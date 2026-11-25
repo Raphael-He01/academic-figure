@@ -1,0 +1,23 @@
+Package: academicfigureworkflow
+Type: Project
+Title: Reproducible Academic Figure Workflow
+Version: 0.1.0
+Authors@R: person("Raphael", "He", role = c("aut", "cre"))
+Description: Reproducible R workflow and validation assets for publication-quality
+    statistical figures, multi-panel layouts, distributions, and heatmaps.
+License: Apache License (== 2.0)
+Encoding: UTF-8
+Imports:
+    jsonlite,
+    colorspace,
+    farver,
+    ggdist,
+    ggplot2,
+    ggrepel,
+    patchwork,
+    ragg,
+    readxl,
+    scales,
+    svglite,
+    systemfonts,
+    viridisLite

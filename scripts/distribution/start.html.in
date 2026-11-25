@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Academic Figure 科研绘图试用版</title><style>
+:root{--paper:#fbfaf8;--card:#fff;--ink:#282631;--muted:#56525e;--rose:#75455d;--soft:#f3e7ec;--line:#e2dce0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.68 "PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif}
+header{border-bottom:1px solid var(--line);background:var(--soft)}header>div,main,footer{max-width:1080px;margin:auto;padding:36px 30px}header>div{padding-top:52px;padding-bottom:43px}
+h1,h2,h3{line-height:1.3;margin:0 0 .55em}h1{font-size:clamp(2rem,5vw,3.55rem);letter-spacing:-.045em}h2{font-size:1.6rem}h3{font-size:1.12rem}
+p{margin:.35em 0 .75em}.meta,.muted,figcaption{color:var(--muted)}.meta{font-size:.94rem;margin:0 0 12px}
+a{color:var(--rose);text-underline-offset:3px}a:focus-visible{outline:2px solid var(--rose);outline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:9px 17px;margin-top:21px}.action{background:var(--rose);color:white;text-decoration:none;padding:.52em .9em;border-radius:6px}nav a:not(.action){padding:.52em 0}
+section{margin:0 0 34px;scroll-margin-top:12px}ul,ol{padding-left:1.5rem}li+li{margin-top:.45em}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:white;padding:12px; border-bottom:1px solid var(--line)}.card figcaption{padding:14px 17px}.card a{white-space:nowrap}
+code{overflow-wrap:anywhere;background:#eee9ee;padding:.1em .24em;border-radius:3px}pre{background:#f3eef1;border:1px solid var(--line);padding:12px 14px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:7px}pre code{background:transparent;padding:0}
+footer{border-top:1px solid var(--line);padding-top:16px;padding-bottom:22px;color:var(--muted)}@media(max-width:620px){header>div,main,footer{padding-left:17px;padding-right:17px}.grid{grid-template-columns:1fr}}
+
+#workflow details{background:var(--card);border-top:1px solid var(--line);padding:0 14px}
+#workflow details:last-of-type{border-bottom:1px solid var(--line)}
+#workflow summary{padding:.7em 0;cursor:pointer;font-weight:650}
+#workflow details p,#workflow details pre{margin-left:.4em}
+#workflow details[open]{padding-bottom:.4em}
+#workflow details + p{margin-top:1em}summary:focus-visible{outline:2px solid var(--rose)}
+</style></head>
+<body><header><div><p class="meta">Raphael He · {{RELEASE_DATE}}</p><h1>科研绘图试用版</h1><p>Academic Figure v{{VERSION}} · 从数据核对到可复现图稿。</p><nav aria-label="快速入口"><a class="action" href="#workflow">选择制图任务</a><a href="#install">安装</a><a href="ROUTES.html">查找图型</a><a href="#models">建模示例</a><a href="#run">RStudio 示例</a><a href="#examples">图稿预览</a><a href="academic-figure/assets/palettes/catalog.html">选择色卡</a></nav></div></header>
+<main>
+<section id="workflow" aria-labelledby="workflow-title">
+<h2 id="workflow-title">这次要做哪件事？</h2>
+<p>将对应指令和已有文件一起交给 Codex。已开工的项目可以从上次的源文件和检查记录继续。</p>
+<details open id="first"><summary>第一次从数据作图</summary>
+<p>附上数据表和字段说明。先约定读者要比较什么，再核对哪些图能表达这个比较。</p>
+<pre><code>使用 $academic-figure。第一次制作图稿时，请先检查所选制图路线的软件和依赖。协助配置好后，继续检查附件的数据与单位，写出五点图稿契约，给出合适的图型并说明依据。确定方案后制作可编辑图稿。</code></pre>
+<p><a href="academic-figure/examples/gallery/simulated_trend.csv">示例 CSV</a> · <a href="academic-figure/examples/gallery/simulated_data_dictionary.csv">字段说明</a> · <a href="academic-figure/references/figure-contract.md">五点契约</a> · <a href="ROUTES.html">按问题查图型</a></p>
+<p>已从自己的数据核实阶段和转移关系时，可在 <code>academic-figure</code> 目录运行 <code>python3 scripts/figure_routes.py V08 --facts facts.json</code>，其中 <code>facts.json</code> 是本项目的核对结果。没有准备这个文件时，可直接打开<a href="#selection">随包选图练习</a>。</p></details>
+<details id="resume"><summary>继续上次的图稿</summary>
+<p>打开已有项目，附上当前脚本或 Origin 工程、配置和最近的检查记录。只有一张图片时，先核对图面能看到的内容。</p>
+<pre><code>使用 $academic-figure 继续这个项目。核对数据、图稿和验收记录的版本，从第一项未完成或受改动影响的工作接着做，沿用整套图已选的色卡。</code></pre>
+<p><a href="academic-figure/references/rendered-qa.md">成品检查与状态记录</a></p></details>
+<details id="batch"><summary>制作一整套图</summary>
+<p>给出整套图的用途，每张图各自回答的问题，以及哪些组别、单位或尺度需要跨图一致。</p>
+<pre><code>使用 $academic-figure 为这批数据制作一套图。整套共用数据字典和组别色卡，同类比较沿用同一量尺。第六步统一选一次色卡，我已指定时直接沿用。先试画最密的一幅，再检查整套。</code></pre>
+<p><a href="academic-figure/assets/palettes/catalog.html">查看命名色卡</a> · <a href="academic-figure/references/palette-system.md">整组配色与连续色阶</a></p></details>
+<details id="change"><summary>局部修改已有图稿</summary>
+<p>说明具体图号和改动，例如放大第二幅图的轴标签。附上原图、可编辑源文件和对应导出。</p>
+<pre><code>使用 $academic-figure，只放大图二的轴标签。沿用原数据、统计和配色，在最终尺寸重查标签遮挡及裁切，并交付修订稿。</code></pre>
+<p><a href="academic-figure/references/rendered-qa.md">导出与版面检查</a></p></details>
+<details id="audit"><summary>审查一份待交付的图</summary>
+<p>附上实际导出的 PDF、SVG 或 PNG。若要核对图中统计量，一并附上对应数据、分析代码和图注。</p>
+<pre><code>使用 $academic-figure 审查这些导出文件。逐项报告数值、图注、字体与版面的检查结果，注明缺什么材料才能核查其余项目。</code></pre>
+<p><a href="academic-figure/references/rendered-qa.md">图稿检查顺序</a> · <a href="academic-figure/references/caption-and-results.md">图注与统计量</a></p></details>
+<p>只学习参考图时，附图片和图注，说明希望借鉴的读图任务。 <a href="academic-figure/references/reference-learning-protocol.md">参考图学习方法</a></p>
+</section>
+
+<section id="install"><h2>安装到 Codex</h2>
+<ol><li>完整解压 ZIP。打开 <code>academic-figure</code> 文件夹确认里面有 <a href="academic-figure/SKILL.md">SKILL.md</a>。</li>
+<li>将整个 <code>academic-figure</code> 文件夹复制到个人技能目录。macOS / Linux 默认用 <code>~/.codex/skills/</code>，Windows 默认用 <code>%USERPROFILE%\.codex\skills\</code>。若设置了 <code>CODEX_HOME</code>，用其中的 <code>skills</code>。</li>
+<li>已有同名版本时先备份。重新加载 Codex 并新开一条对话，使用上方的任务指令。</li></ol>
+
+<p><a href="academic-figure/examples/gallery/simulated_trend.csv">试用 CSV</a> · <a href="academic-figure/examples/gallery/simulated_data_dictionary.csv">数据字典</a> · <a href="academic-figure/README.md">完整使用说明</a></p></section>
+<section id="models"><h2>两套模型输出怎样选图</h2><p>这两幅图使用随包脚本生成的模拟记录。点击 SVG 查看细节，下载 CSV 可以核对图中每个位置所用的记录或时点汇总。</p><div class="grid"><figure class="card"><a href="academic-figure/examples/model-output/preview/state-mass.svg"><img src="academic-figure/examples/model-output/preview/state-mass.png" alt="加权状态概率场"></a><figcaption><h3>加权状态概率场</h3><p>按时点查看状态分布如何分叉，区分概率为零的分箱与整个时点的缺测。</p><a href="academic-figure/examples/model-output/preview/state-mass.svg">SVG</a> · <a href="academic-figure/examples/model-output/preview/state-mass.png">PNG</a> · <a href="academic-figure/examples/model-output/preview/mass-summary.csv">时点汇总 CSV</a></figcaption></figure><figure class="card"><a href="academic-figure/examples/model-output/preview/sample-atlas.svg"><img src="academic-figure/examples/model-output/preview/sample-atlas.png" alt="样本与特征图谱"></a><figcaption><h3>样本与特征图谱</h3><p>沿样本列追踪四个时段的温度偏差，核对组别、缺测位置和代表样本。</p><a href="academic-figure/examples/model-output/preview/sample-atlas.svg">SVG</a> · <a href="academic-figure/examples/model-output/preview/sample-atlas.png">PNG</a> · <a href="academic-figure/examples/model-output/preview/atlas-cells.csv">图中单元 CSV</a></figcaption></figure></div><p>在 RStudio 中将工作目录切到解压后的 <code>academic-figure</code>，运行以下两行。输入和作图步骤都在同一份 <a href="academic-figure/examples/model-output/render.R">R 源码</a>中，输出目录需使用新名称。</p>
+<pre><code>source("examples/model-output/render.R")
+render_model_examples("我的建模图")</code></pre>
+<p>也可把下面的指令和数据字典交给 Codex。</p>
+<pre><code>使用 $academic-figure。根据我的研究问题查找图型索引，核对数据是否保留所需的编号、权重和缺测信息。说明最合适的主图、需要补充的数据，以及证据不足时能画什么。</code></pre>
+<p><a href="ROUTES.html">按研究问题浏览 32 种图型</a> · <a href="academic-figure/references/weighted-state-fields.md">状态场用法</a> · <a href="academic-figure/references/sample-atlas.md">样本图谱用法</a></p>
+<p>在 <code>academic-figure</code> 目录中也可用中文关键词搜索。</p><pre><code>python3 scripts/figure_routes.py 变点
+python3 scripts/figure_routes.py V06</code></pre></section>
+<section id="selection"><h2>模型输出怎么选图</h2>
+<p>同一套模型可能输出联合抽样、阶段去向或分项贡献。先判断数据保留了哪些关系，再决定用后验角图、阶段流向图还是贡献瀑布图。<a href="academic-figure/references/model-output-routing.md">阅读选图指南</a></p>
+<p>下面的模拟登记表在三次分派中都显示 A、B 两处各有三件物品。将登记表交给 skill，再用随包的核对程序对照结果。</p>
+<pre><code>使用 $academic-figure。请检查 desks.csv。只看每次分派的总数，能否知道哪些物品换过位置？保留物品编号后，两次转移分别有几件换过位置？请据此选择图形。</code></pre>
+<p><a href="academic-figure/examples/stage-flow/desks.csv">示例登记表</a> · <a href="academic-figure/examples/stage-flow/compare.py">核对程序</a></p>
+<p>在 <code>academic-figure</code> 目录运行 <code>python3 -B examples/stage-flow/compare.py</code> 即可核对。此例只需 Python 标准库。</p></section>
+<section id="run"><h2>用 RStudio 重画一套图</h2>
+<ol><li>把解压后的目录交给 Codex，选择 RStudio 路线，并告诉它「先检测这台电脑的绘图环境，需要时协助安装，就绪后继续运行随包示例」。<a href="academic-figure/references/first-run.md">首次配置说明</a>列出了按系统安装及恢复项目的办法。</li>
+<li>环境就绪后用 RStudio 打开 <a href="Statistical-Demo/Academic-Figure.Rproj">Academic-Figure.Rproj</a>，在控制台运行下列代码。试用工程默认使用当前 R 库。若检查报告缺少 R 包，确认安装后运行 <code>check_figure_environment(install = TRUE)</code>，再执行下列代码。需使用锁定版本时，在项目副本手动执行 <code>source("renv/activate.R")</code> 和 <code>renv::restore()</code>，再重新检查。</li></ol>
+<pre><code>source("scripts/check_r_project.R")
+env &lt;- check_figure_environment()
+if (isTRUE(env$ready)) source("R/run_example.R")</code></pre>
+<p>首张预览位于 <code>Statistical-Demo/output/previews/academic_figure_example_preview.png</code>。</p>
+<p>首次运行会生成模拟数据。再次运行会读取已保存的四张输入表。上次的输入缺失时，请根据提示找回对应版本。查看 <code>Statistical-Demo/output/</code> 中的导出、图注和检查记录。三个空间及诊断示例可从 <code>academic-figure</code> 目录运行 <a href="academic-figure/examples/run_demos.R">examples/run_demos.R</a>，需另有 R 包 <code>maps</code>。</p></section>
+<section id="examples"><h2>图稿预览</h2><p>示例使用模拟数据。点击图下的格式链接查看或保存文件。</p><div class="grid"><figure class="card"><img src="academic-figure/examples/gallery/statistical_panels.png" alt="统计多面板"><figcaption><h3>统计多面板</h3><p>趋势、组间分布和带数值标注的热图。</p><a href="academic-figure/examples/gallery/statistical_panels.pdf" aria-label="统计多面板 PDF">PDF</a> · <a href="academic-figure/examples/gallery/statistical_panels.svg" aria-label="统计多面板 SVG">SVG</a> · <a href="academic-figure/examples/gallery/statistical_panels.png" aria-label="统计多面板 PNG">PNG</a></figcaption></figure><figure class="card"><img src="academic-figure/examples/gallery/global_sites.png" alt="全球点位"><figcaption><h3>全球点位</h3><p>地图上的模拟站点及其类别。</p><a href="academic-figure/examples/gallery/global_sites.pdf" aria-label="全球点位 PDF">PDF</a> · <a href="academic-figure/examples/gallery/global_sites.svg" aria-label="全球点位 SVG">SVG</a> · <a href="academic-figure/examples/gallery/global_sites.png" aria-label="全球点位 PNG">PNG</a></figcaption></figure><figure class="card"><img src="academic-figure/examples/gallery/spatial_residuals.png" alt="空间残差"><figcaption><h3>空间残差</h3><p>留出样本的空间误差和以零为中心的色标。</p><a href="academic-figure/examples/gallery/spatial_residuals.pdf" aria-label="空间残差 PDF">PDF</a> · <a href="academic-figure/examples/gallery/spatial_residuals.svg" aria-label="空间残差 SVG">SVG</a> · <a href="academic-figure/examples/gallery/spatial_residuals.png" aria-label="空间残差 PNG">PNG</a></figcaption></figure><figure class="card"><img src="academic-figure/examples/gallery/model_diagnostics.png" alt="预测诊断"><figcaption><h3>预测诊断</h3><p>留出样本的拟合与残差检查。</p><a href="academic-figure/examples/gallery/model_diagnostics.pdf" aria-label="预测诊断 PDF">PDF</a> · <a href="academic-figure/examples/gallery/model_diagnostics.svg" aria-label="预测诊断 SVG">SVG</a> · <a href="academic-figure/examples/gallery/model_diagnostics.png" aria-label="预测诊断 PNG">PNG</a></figcaption></figure><figure class="card"><img src="academic-figure/examples/mixed-script/mixed-script.png" alt="中文数学混排"><figcaption><h3>中文数学混排</h3><p>中文、希腊字母和上下标的浏览器 PDF 校样。</p><a href="academic-figure/examples/mixed-script/mixed-script.pdf" aria-label="中文数学混排 PDF">PDF</a> · <a href="academic-figure/examples/mixed-script/mixed-script.svg" aria-label="中文数学混排 SVG">SVG</a> · <a href="academic-figure/examples/mixed-script/mixed-script.png" aria-label="中文数学混排 PNG">PNG</a></figcaption></figure></div></section>
+<section id="review"><h2>配色、验收和许可</h2>
+<p><a href="academic-figure/assets/palettes/catalog.html">{{PALETTE_COUNT}} 套离线色卡</a> · <a href="academic-figure/examples/mixed-script/mixed-script.json">混排校样验证 JSON</a> · <a href="academic-figure/examples/mixed-script/palette-swatches.png">雾海玫瑰色觉检查图</a> · <a href="academic-figure/VALIDATION.md">验收记录</a> · <a href="academic-figure/THIRD_PARTY_NOTICES.md">许可与上游署名</a></p>
+<p class="muted">本地 RStudio、Origin、操作系统及云端 CI 的实测范围见本版验收记录。混排样图属于校样，提交前需复核尺寸、文字与图稿。</p>
+</section></main><footer>试用包含源代码、图注、检查记录及第三方许可。</footer></body></html>

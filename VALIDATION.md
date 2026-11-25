@@ -1,0 +1,37 @@
+# Release validation · 0.1.6-beta
+
+Local review build by Raphael He. The project was checked on macOS arm64 with R 4.6.1, PyMuPDF and Google Chrome. This update covers first-use setup, clean distribution builds and the public repository. The figure-specific observations below apply to their named gallery or test files.
+
+| Check | Result and scope |
+|---|---|
+| Skill structure and links | The local validator and Markdown link checks passed. |
+| First use with an empty user library | On macOS arm64, an isolated ordinary project reported all 13 plotting imports missing. An offline package repository assembled from installed R binaries supplied 41 packages including dependencies. The project repair helper installed them into a temporary user library. A fresh R 4.6.1 session rechecked the project and produced its PDF, SVG, PNG and TIFF. The PNG was opened for visual inspection. |
+| Runtime discovery and repair | The selected RStudio route detected both applications on this Mac. Missing R, a missing IDE, unsupported package sources, installer failure and retry are exercised with isolated inputs or simulated package managers. A separate local package fixture exercises actual installation. A temporary renv project was also repaired against its lockfile. |
+| Rebuild and handoff | The trial and palette ZIPs build from the public source tree. The trial includes the existing five mixed-script and colour-review exhibits. Chrome was used offline at widths of 390 and 1280 px to check the trial entry, chart search and palette selection. The palette PNG was checked against all 85 registered swatch positions. |
+| Regression suite | The macOS run of the extracted skill with Chromium enabled passed 63 tests with zero skips. Coverage includes first-use setup and retry, scaffold-to-export, named group identity, packaging, archive contents and required notices. |
+| Starting or resuming the R demo | First-run tests created four simulated inputs. In a revision test the saved day-28 control mean was changed to 24.5 and record order reversed. Input file digests survived the rerun, and the figure summary and caption reflected the updated value. A contradictory endpoint or lost inputs with evidence of an earlier run stopped the render and preserved the earlier output. |
+| Set-wide group identities | A two-group panel in reverse order retained the colour, point shape and line type from the full three-group set; a group outside the declared set was rejected. The optional evidence lookup was also exercised for supported, incomplete and manual-review routes. |
+| Model-output routing | Checked matched posterior draws, keyed stage transitions and an additive decomposition against frozen tables. Withholding the decisive relationship in each case removed its candidate. The selector uses explicitly supplied facts. [Selection guide](references/model-output-routing.md) |
+| Figure-family selection | The [index](references/figure-family-index.md) documents 32 research questions and their prerequisites. The [lookup](scripts/figure_routes.py) searches the guide. The separate [evidence checker](scripts/chart_guard.py) evaluates supplied boolean facts for nine families. |
+| Simulated model-output examples | The [state field](examples/model-output/preview/state-mass.svg) and [sample atlas](examples/model-output/preview/sample-atlas.svg) were regenerated locally with Rscript into a new directory, producing two SVGs, two PNGs and two CSVs. Against the source library’s frozen tables, the maximum absolute difference over 28,000 state-probability cells was below 9e−16. An independent reconstruction of 2,314 Wine feature z-scores agreed within 1.5e−14. Component tests also cover tails, missing times, mismatched sample keys and representative IDs. Compare the former against the [per-time summary](examples/model-output/preview/mass-summary.csv), and the latter against its [keyed cells](examples/model-output/preview/atlas-cells.csv). [R source](examples/model-output/render.R) |
+| Included gallery | The four simulated examples were checked as PDF, SVG and PNG at their declared dimensions. All four embedded-font PDF checks passed. The gallery records bind checks to the distributed files. [Gallery checks](examples/gallery/mechanical_checks.json) |
+| PDF geometry | A deliberately incorrect width failed even without Poppler. Removing both readers produced the expected `NOT AUDITABLE` status. |
+| Optional browser PDF | Local output retained clipping in two maps, dashed diagnostic guides, and the statistical interval bands and colour bar. A separate full-panel PDF preserved the exact string `中文 α β μ x² H₂O`, with 530 drawing paths and no raster image resources. The largest observed browser page-size deviation was about 0.19 mm. These drafts remain pending final-size review. |
+| Legacy SVG conversion | The experimental PyMuPDF converter produced misleading results on the four gallery figures. The experimental path now detects or blocks the visual features described in the R workflow. [Export guide](references/r-workflow.md#mixed-script-export-check) |
+| Colour-card review | Checked the current swatch export with original, deutan, protan, tritan and grayscale rows. Each of the 15 rendered label/background pairs had a computed contrast ratio above 4.5∶1. Single-group comparisons report pairwise distance as inapplicable. |
+| Point-map template | A render with the default placeholder fields produced a visible DRAFT title and an incomplete-label warning. |
+| RStudio | A previous local GUI run produced the simulated scaffold exports. Current automated regression used Rscript. |
+| Origin | OriginPro 2026b Learning Edition opened in the Windows 11 ARM64 guest. Guest desktop control stopped responding during data entry. Native plotting, saving an editable project and verifying exported files are pending. |
+| Platform coverage | This build ran locally on macOS. System-wide installer runs on clean Windows and Linux machines and GitHub-hosted job results are pending. The Ubuntu full-render job requires all tests to execute. A release tag runs the regression workflow before building downloadable files and creating a draft. |
+
+## Scientific and visual scope
+
+The public gallery contains simulated data. Data profiling checks structure. Caption tools compare explicit facts or recompute the selected CSV column's row count and rounded mean. Scientific interpretation, independent sample counts and numerical statements in free prose require review against the underlying analysis. Compare each exported figure with its intended data encodings and review the output at the target size.
+
+The mixed-script browser draft passed font-program and text-size checks on the local sample. The geometry collision helper flagged some intersections around white panel borders and the heatmap. Screen inspection showed readable labels. Keep the draft pending for any intended submission or printing, and verify each actual figure against its output requirements.
+
+## Package and licence
+
+The packager verifies member names, duplicate entries and byte hashes. Run the regression suite from the extracted archive when preparing a handoff. Third-party notices and pinned licence evidence accompany the release. [Third-party notices](THIRD_PARTY_NOTICES.md) · [Licence source record](LICENSES/SOURCES.md)
+
+The v0.1.1-beta review archive describes an earlier snapshot. The [change log](CHANGELOG.md) lists the changes included in this version.

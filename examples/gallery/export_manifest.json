@@ -1,0 +1,50 @@
+{
+  "global_sites": {
+    "stem": "global_sites",
+    "width_mm": 160,
+    "height_mm": 105,
+    "png_dpi": 300,
+    "pdf_device": "quartz",
+    "palette_id": "rose_mist",
+    "palette_version": 1,
+    "group_mapping": {
+      "Western": "#C289A0",
+      "Central": "#527F94",
+      "Eastern": "#A5B59A"
+    },
+    "acceptance": "pending",
+    "simulation": true
+  },
+  "spatial_residuals": {
+    "stem": "spatial_residuals",
+    "width_mm": 160,
+    "height_mm": 105,
+    "png_dpi": 300,
+    "pdf_device": "quartz",
+    "palette_id": "rose_mist",
+    "palette_version": 1,
+    "group_mapping": {
+      "Western": "#C289A0",
+      "Central": "#527F94",
+      "Eastern": "#A5B59A"
+    },
+    "acceptance": "pending",
+    "simulation": true
+  },
+  "model_diagnostics": {
+    "stem": "model_diagnostics",
+    "width_mm": 183,
+    "height_mm": 100,
+    "png_dpi": 300,
+    "pdf_device": "quartz",
+    "palette_id": "rose_mist",
+    "palette_version": 1,
+    "group_mapping": {
+      "Western": "#C289A0",
+      "Central": "#527F94",
+      "Eastern": "#A5B59A"
+    },
+    "acceptance": "pending",
+    "simulation": true
+  }
+}

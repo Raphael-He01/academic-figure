@@ -1,0 +1,25 @@
+"day","group","replicate","response","response_unit","is_simulated","simulation_seed"
+28,"Control",1,48.258,"a.u.",TRUE,20261009
+28,"Treatment A",1,63.163,"a.u.",TRUE,20261009
+28,"Treatment B",1,68.365,"a.u.",TRUE,20261009
+28,"Control",2,55.175,"a.u.",TRUE,20261009
+28,"Treatment A",2,61.727,"a.u.",TRUE,20261009
+28,"Treatment B",2,49.862,"a.u.",TRUE,20261009
+28,"Control",3,41.628,"a.u.",TRUE,20261009
+28,"Treatment A",3,53.814,"a.u.",TRUE,20261009
+28,"Treatment B",3,59.034,"a.u.",TRUE,20261009
+28,"Control",4,52.513,"a.u.",TRUE,20261009
+28,"Treatment A",4,59.499,"a.u.",TRUE,20261009
+28,"Treatment B",4,65.846,"a.u.",TRUE,20261009
+28,"Control",5,44.876,"a.u.",TRUE,20261009
+28,"Treatment A",5,56.722,"a.u.",TRUE,20261009
+28,"Treatment B",5,64.341,"a.u.",TRUE,20261009
+28,"Control",6,43.945,"a.u.",TRUE,20261009
+28,"Treatment A",6,61.899,"a.u.",TRUE,20261009
+28,"Treatment B",6,63.281,"a.u.",TRUE,20261009
+28,"Control",7,53.063,"a.u.",TRUE,20261009
+28,"Treatment A",7,60.697,"a.u.",TRUE,20261009
+28,"Treatment B",7,60.192,"a.u.",TRUE,20261009
+28,"Control",8,46.472,"a.u.",TRUE,20261009
+28,"Treatment A",8,57.672,"a.u.",TRUE,20261009
+28,"Treatment B",8,58.17,"a.u.",TRUE,20261009

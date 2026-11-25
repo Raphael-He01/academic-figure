@@ -1,0 +1,2 @@
+# Optional PDF audits only; no Python plotting dependency.
+PyMuPDF>=1.24,<2

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Figure"
+  short_description: "Create and verify figures with RStudio or Origin"
+  default_prompt: "Use $academic-figure to create and verify a figure set using RStudio or Origin, confirming one palette for the set before production."

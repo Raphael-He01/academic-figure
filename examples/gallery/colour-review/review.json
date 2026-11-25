@@ -1,0 +1,14 @@
+{
+  "input_name": "statistical_panels.png",
+  "input_sha256": "371c8e4f9b0e9d24ed9f9ca0086571ee1087e3ae8bbb09bf4ef3da79b23240c7",
+  "width_px": 2161,
+  "height_px": 1748,
+  "files_sha256": {
+    "deutan.png": "113724e2b3e52c16ab94b2a4c5ade221689f00e42bf5b51cdb13ec9a205e2297",
+    "protan.png": "514d4e00e00e7f9bbdf86c583e7cb47740fce97bbdd29813c098575ff90d6aee",
+    "tritan.png": "02c98c17f7f6efebe53f800657c344f923d81f54a0b7811504bfce044561d6bd",
+    "grayscale.png": "0162807f88e47fd9c368543b7ea270339158e2a24badda7aa94f72a1f85139cc"
+  },
+  "method": "R colorspace full-raster RGB transformation; severity defaults to package simulation",
+  "acceptance": "pending visual review; no universal accessibility certification"
+}

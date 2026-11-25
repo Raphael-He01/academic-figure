@@ -1,0 +1,121 @@
+"day","group","replicate","response","response_unit","is_simulated","simulation_seed"
+0,"Control",1,43.335,"a.u.",TRUE,20261009
+7,"Control",1,48.075,"a.u.",TRUE,20261009
+14,"Control",1,51.007,"a.u.",TRUE,20261009
+21,"Control",1,46.923,"a.u.",TRUE,20261009
+28,"Control",1,48.258,"a.u.",TRUE,20261009
+0,"Treatment A",1,43.432,"a.u.",TRUE,20261009
+7,"Treatment A",1,50.184,"a.u.",TRUE,20261009
+14,"Treatment A",1,56.331,"a.u.",TRUE,20261009
+21,"Treatment A",1,64.675,"a.u.",TRUE,20261009
+28,"Treatment A",1,63.163,"a.u.",TRUE,20261009
+0,"Treatment B",1,51.827,"a.u.",TRUE,20261009
+7,"Treatment B",1,58.039,"a.u.",TRUE,20261009
+14,"Treatment B",1,57.661,"a.u.",TRUE,20261009
+21,"Treatment B",1,67.31,"a.u.",TRUE,20261009
+28,"Treatment B",1,68.365,"a.u.",TRUE,20261009
+0,"Control",2,49.168,"a.u.",TRUE,20261009
+7,"Control",2,51.842,"a.u.",TRUE,20261009
+14,"Control",2,41.332,"a.u.",TRUE,20261009
+21,"Control",2,48.172,"a.u.",TRUE,20261009
+28,"Control",2,55.175,"a.u.",TRUE,20261009
+0,"Treatment A",2,43.049,"a.u.",TRUE,20261009
+7,"Treatment A",2,44.717,"a.u.",TRUE,20261009
+14,"Treatment A",2,61.272,"a.u.",TRUE,20261009
+21,"Treatment A",2,57.417,"a.u.",TRUE,20261009
+28,"Treatment A",2,61.727,"a.u.",TRUE,20261009
+0,"Treatment B",2,39.521,"a.u.",TRUE,20261009
+7,"Treatment B",2,55.539,"a.u.",TRUE,20261009
+14,"Treatment B",2,54.132,"a.u.",TRUE,20261009
+21,"Treatment B",2,56.004,"a.u.",TRUE,20261009
+28,"Treatment B",2,49.862,"a.u.",TRUE,20261009
+0,"Control",3,45.013,"a.u.",TRUE,20261009
+7,"Control",3,51.866,"a.u.",TRUE,20261009
+14,"Control",3,46.161,"a.u.",TRUE,20261009
+21,"Control",3,56.325,"a.u.",TRUE,20261009
+28,"Control",3,41.628,"a.u.",TRUE,20261009
+0,"Treatment A",3,44.412,"a.u.",TRUE,20261009
+7,"Treatment A",3,54.256,"a.u.",TRUE,20261009
+14,"Treatment A",3,51.405,"a.u.",TRUE,20261009
+21,"Treatment A",3,68.988,"a.u.",TRUE,20261009
+28,"Treatment A",3,53.814,"a.u.",TRUE,20261009
+0,"Treatment B",3,53.494,"a.u.",TRUE,20261009
+7,"Treatment B",3,49.901,"a.u.",TRUE,20261009
+14,"Treatment B",3,61.525,"a.u.",TRUE,20261009
+21,"Treatment B",3,63.786,"a.u.",TRUE,20261009
+28,"Treatment B",3,59.034,"a.u.",TRUE,20261009
+0,"Control",4,50.596,"a.u.",TRUE,20261009
+7,"Control",4,52.208,"a.u.",TRUE,20261009
+14,"Control",4,47.795,"a.u.",TRUE,20261009
+21,"Control",4,38.539,"a.u.",TRUE,20261009
+28,"Control",4,52.513,"a.u.",TRUE,20261009
+0,"Treatment A",4,53.52,"a.u.",TRUE,20261009
+7,"Treatment A",4,47.29,"a.u.",TRUE,20261009
+14,"Treatment A",4,46.111,"a.u.",TRUE,20261009
+21,"Treatment A",4,51.506,"a.u.",TRUE,20261009
+28,"Treatment A",4,59.499,"a.u.",TRUE,20261009
+0,"Treatment B",4,51.718,"a.u.",TRUE,20261009
+7,"Treatment B",4,57.016,"a.u.",TRUE,20261009
+14,"Treatment B",4,52.223,"a.u.",TRUE,20261009
+21,"Treatment B",4,62.643,"a.u.",TRUE,20261009
+28,"Treatment B",4,65.846,"a.u.",TRUE,20261009
+0,"Control",5,56.195,"a.u.",TRUE,20261009
+7,"Control",5,48.425,"a.u.",TRUE,20261009
+14,"Control",5,45.34,"a.u.",TRUE,20261009
+21,"Control",5,58.383,"a.u.",TRUE,20261009
+28,"Control",5,44.876,"a.u.",TRUE,20261009
+0,"Treatment A",5,46.745,"a.u.",TRUE,20261009
+7,"Treatment A",5,54.165,"a.u.",TRUE,20261009
+14,"Treatment A",5,52.564,"a.u.",TRUE,20261009
+21,"Treatment A",5,58.98,"a.u.",TRUE,20261009
+28,"Treatment A",5,56.722,"a.u.",TRUE,20261009
+0,"Treatment B",5,39.758,"a.u.",TRUE,20261009
+7,"Treatment B",5,48.274,"a.u.",TRUE,20261009
+14,"Treatment B",5,62.041,"a.u.",TRUE,20261009
+21,"Treatment B",5,62.759,"a.u.",TRUE,20261009
+28,"Treatment B",5,64.341,"a.u.",TRUE,20261009
+0,"Control",6,46.537,"a.u.",TRUE,20261009
+7,"Control",6,62.644,"a.u.",TRUE,20261009
+14,"Control",6,48.445,"a.u.",TRUE,20261009
+21,"Control",6,46.454,"a.u.",TRUE,20261009
+28,"Control",6,43.945,"a.u.",TRUE,20261009
+0,"Treatment A",6,38.228,"a.u.",TRUE,20261009
+7,"Treatment A",6,55.816,"a.u.",TRUE,20261009
+14,"Treatment A",6,54.179,"a.u.",TRUE,20261009
+21,"Treatment A",6,50.391,"a.u.",TRUE,20261009
+28,"Treatment A",6,61.899,"a.u.",TRUE,20261009
+0,"Treatment B",6,49.001,"a.u.",TRUE,20261009
+7,"Treatment B",6,50.304,"a.u.",TRUE,20261009
+14,"Treatment B",6,54.033,"a.u.",TRUE,20261009
+21,"Treatment B",6,59.007,"a.u.",TRUE,20261009
+28,"Treatment B",6,63.281,"a.u.",TRUE,20261009
+0,"Control",7,54.038,"a.u.",TRUE,20261009
+7,"Control",7,56.42,"a.u.",TRUE,20261009
+14,"Control",7,48.849,"a.u.",TRUE,20261009
+21,"Control",7,49.069,"a.u.",TRUE,20261009
+28,"Control",7,53.063,"a.u.",TRUE,20261009
+0,"Treatment A",7,48.219,"a.u.",TRUE,20261009
+7,"Treatment A",7,54.733,"a.u.",TRUE,20261009
+14,"Treatment A",7,62.291,"a.u.",TRUE,20261009
+21,"Treatment A",7,54.496,"a.u.",TRUE,20261009
+28,"Treatment A",7,60.697,"a.u.",TRUE,20261009
+0,"Treatment B",7,55.42,"a.u.",TRUE,20261009
+7,"Treatment B",7,56.61,"a.u.",TRUE,20261009
+14,"Treatment B",7,68.013,"a.u.",TRUE,20261009
+21,"Treatment B",7,58.419,"a.u.",TRUE,20261009
+28,"Treatment B",7,60.192,"a.u.",TRUE,20261009
+0,"Control",8,47.281,"a.u.",TRUE,20261009
+7,"Control",8,56.7,"a.u.",TRUE,20261009
+14,"Control",8,45.068,"a.u.",TRUE,20261009
+21,"Control",8,46.278,"a.u.",TRUE,20261009
+28,"Control",8,46.472,"a.u.",TRUE,20261009
+0,"Treatment A",8,41.119,"a.u.",TRUE,20261009
+7,"Treatment A",8,53.28,"a.u.",TRUE,20261009
+14,"Treatment A",8,63.306,"a.u.",TRUE,20261009
+21,"Treatment A",8,60.133,"a.u.",TRUE,20261009
+28,"Treatment A",8,57.672,"a.u.",TRUE,20261009
+0,"Treatment B",8,49.36,"a.u.",TRUE,20261009
+7,"Treatment B",8,55.302,"a.u.",TRUE,20261009
+14,"Treatment B",8,55.435,"a.u.",TRUE,20261009
+21,"Treatment B",8,66.759,"a.u.",TRUE,20261009
+28,"Treatment B",8,58.17,"a.u.",TRUE,20261009

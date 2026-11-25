@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If citing this workflow, credit its integration and maintenance; retain third-party authors separately."
+title: "Academic Figure: reproducible scientific figure workflow"
+authors:
+  - family-names: He
+    given-names: Raphael
+version: 0.1.6-beta
+date-released: 2026-11-26
+type: software
