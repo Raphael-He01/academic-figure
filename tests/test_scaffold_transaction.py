@@ -3,6 +3,8 @@ import contextlib
 import importlib.util
 import io
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest import mock
@@ -48,9 +50,23 @@ class ScaffoldTransactionTest(unittest.TestCase):
             original_copy = scaffold.shutil.copyfileobj
             def add_late_target(reader, writer):
                 if not target.exists():
+                    target.parent.mkdir(exist_ok=True)
                     target.write_text("user content", encoding="utf-8")
                 original_copy(reader, writer)
             with mock.patch.object(scaffold.shutil, "copyfileobj", side_effect=add_late_target):
                 self.assertEqual(self.run_scaffold(project), 3)
             self.assertEqual(target.read_text(encoding="utf-8"), "user content")
             self.assertEqual(set(project.rglob("*")), {target.parent, target})
+
+    def test_simultaneous_creators_leave_one_complete_project(self):
+        with tempfile.TemporaryDirectory() as temp:
+            project = Path(temp) / "shared"
+            command = [sys.executable, "-B", str(SCRIPT), str(project)]
+            output = {"stdout": subprocess.DEVNULL, "stderr": subprocess.DEVNULL}
+            with subprocess.Popen(command, **output) as first, subprocess.Popen(command, **output) as second:
+                codes = sorted(process.wait(timeout=30) for process in (first, second))
+            self.assertEqual(codes, [0, 3])
+            expected = {path.relative_to(SCRIPT.parents[1] / "assets/r-template")
+                        for path in (SCRIPT.parents[1] / "assets/r-template").rglob("*") if path.is_file()}
+            expected.update({Path("data/palettes/catalog.json"), Path("scripts/check_r_project.R")})
+            self.assertEqual({path.relative_to(project) for path in project.rglob("*") if path.is_file()}, expected)

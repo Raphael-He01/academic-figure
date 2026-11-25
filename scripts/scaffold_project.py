@@ -49,16 +49,20 @@ def main() -> int:
 
     created: dict[Path, os.stat_result] = {}
     try:
-        for directory in sorted(directories, key=lambda path: (len(path.parts), path.parts)):
-            try:
-                directory.mkdir()
-            except FileExistsError:
-                if directory.is_symlink() or not directory.is_dir():
-                    raise
-            else:
-                created[directory] = directory.lstat()
         for relative, source in files.items():
             target = destination / relative
+            # Build only this target's parents so a competing run cannot acquire
+            # and subsequently roll back empty directories needed by the winner.
+            for directory in reversed(target.parents):
+                if directory not in directories:
+                    continue
+                try:
+                    directory.mkdir()
+                except FileExistsError:
+                    if directory.is_symlink() or not directory.is_dir():
+                        raise
+                else:
+                    created[directory] = directory.lstat()
             with source.open("rb") as reader:
                 writer = target.open("xb")
                 identity = os.fstat(writer.fileno())
